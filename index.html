@@ -31,14 +31,16 @@
     var hitPlat = false;
     var score = 0;
     var backOp = 0;
+    var bg;
     
     function setup() {
+      var bg = loadImage('SpaceBackground.jpg');
       createCanvas(1920,1080);
       
     }
       
     function draw() {
-      background(loadImage("SpaceBackground.jpg"));
+      background(bg);
       jumper.show();
       jumper.update();
       jumper.move();
