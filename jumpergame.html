@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <script src="p5.min.js"></script>
+    <script src="p5.collide2d.min.js"></script>
+    <script src='jumper.js'></script>
+    <script src='barrier.js'></script>
+    <script src='platform.js'></script>
+    <style>
+      body {
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        background-size:cover;
+      }
+      
+      #scoreBox {
+        position:fixed;
+        color:yellow;
+        font-size:40px;
+        font-family:Arial;
+        margin-top:-5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id='scoreBox'>Score: 0</p>
+    <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var hitBarrier = false;
+    var hitPlat = false;
+    var score = 0;
+    var backOp = 0;
+    
+    function setup() {
+      createCanvas(w,h);
+      
+    }
+      
+    function draw() {
+      background(loadImage("SpaceBackground.jpg");
+      jumper.show();
+      jumper.update();
+      jumper.move();
+      barrier.show();
+      barrier.update();
+      platform.show();
+      
+      hitBarrier = collideRectCircle(barrier.x,barrier.y,barrier.w,barrier.randH,jumper.x,jumper.y,jumper.r/2);
+      hitPlat = collideRectCircle(platform.x,platform.y,platform.w,platform.h,jumper.x,jumper.y,jumper.r);
+      
+      
+      if (hitBarrier == true) {
+        noLoop();
+        var score = 0;
+      }
+      
+      if (hitPlat == true) {
+        jumper.gravity = 0.1;
+        jumper.lift = -25;
+        jumper.velocity = 0;
+      }
+      else {
+        jumper.gravity = 0.5;
+        jumper.lift = -10;
+      }
+    }
+    </script>
+  </body>
+</html>
