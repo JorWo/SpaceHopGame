@@ -12,8 +12,6 @@ var jumperImg = loadImage('spaceship.png');
         this.velocity = 0; //Velocity of player
         
         this.show = function() {
-          fill(color('red'));
-          ellipse(this.x,this.y,this.r,this.r);
           image(jumperImg, this.x, this.y, this. r, this.r);
         }
         
