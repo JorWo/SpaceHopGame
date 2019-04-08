@@ -48,25 +48,12 @@
       jumper.move();
       barrier.show();
       barrier.update();
-      //platform.show();
       
       hitBarrier = collideRectCircle(barrier.x,barrier.y,barrier.w,barrier.randH,jumper.x,jumper.y,jumper.r/2);
-      hitPlat = collideRectCircle(platform.x,platform.y,platform.w,platform.h,jumper.x,jumper.y,jumper.r);
-      
       
       if (hitBarrier == true) {
         noLoop();
         var score = 0;
-      }
-      
-      if (hitPlat == true) {
-        jumper.gravity = 0.1;
-        jumper.lift = -25;
-        jumper.velocity = 0;
-      }
-      else {
-        jumper.gravity = 0.5;
-        jumper.lift = -10;
       }
     }
     </script>
