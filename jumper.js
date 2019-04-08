@@ -1,7 +1,7 @@
 var w = window.innerWidth;
 var h = window.innerHeight;
 var jumper = new jumper();
-var jumperImg = loadImage('spaceship.png');
+var jumperImg;
 
       function jumper() {
         this.x = 50;
