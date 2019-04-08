@@ -12,7 +12,7 @@ var jumperImg;
         this.velocity = 0; //Velocity of player
         
         this.show = function() {
-          image(jumperImg, this.x, this.y, this. r, this.r);
+          image(jumperImg, this.x, this.y, 200, 200);
         }
         
         this.up = function() {
