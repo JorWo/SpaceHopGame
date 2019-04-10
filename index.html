@@ -33,12 +33,35 @@
     var backOp = 0;
     var bg;
     var jumperImg;
+    var m1;
+    var m2;
+    var m3;
+    var m4;
+    var m5;
+    var m6
+    var m7;
+    var m8;
+    var m9;
+    var m10;
+    var m11;
     var meteorImg;
-    
+     
     function setup() {
       bg = loadImage('SpaceBackground.jpg');
       jumperImg = loadImage('spaceship.png');
       meteorImg = loadImage('meteors/meteor0001.png');
+      m1 = loadImage('meteors/meteor0001.png');
+      m2 = loadImage('meteors/meteor0002.png');
+      m3 = loadImage('meteors/meteor0003.png');
+      m4 = loadImage('meteors/meteor0004.png');
+      m5 = loadImage('meteors/meteor0005.png');
+      m6 = loadImage('meteors/meteor0006.png');
+      m7 = loadImage('meteors/meteor0007.png');
+      m8 = loadImage('meteors/meteor0008.png');
+      m9 = loadImage('meteors/meteor0009.png');
+      m10 = loadImage('meteors/meteor0010.png');
+      m11 = loadImage('meteors/meteor0011.png');
+      
       createCanvas(w,h);
       
     }
@@ -51,7 +74,7 @@
       barrier.show();
       barrier.update();
       
-      hitBarrier = collideRectRect(barrier.x,barrier.y,barrier.randH*0.6,barrier.randH*0.3,jumper.x,jumper.y,jumper.r-25,jumper.r-20);
+      hitBarrier = collideRectRect(barrier.x,barrier.y,barrier.randH*0.5,barrier.randH*0.5,jumper.x,jumper.y,jumper.r-25,jumper.r-20);
       
       if (hitBarrier == true) {
         noLoop();
