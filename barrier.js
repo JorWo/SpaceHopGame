@@ -13,7 +13,7 @@ function barrier() {
   
   this.show = function() {
     fill(color('white'));
-    rect(this.x,this.y,this.w,this.randH);
+    Image(meteorImg,this.x,this.y,this.w,this.randH);
     }
     
   this.update = function() {
