@@ -2,6 +2,7 @@ var w = window.innerWidth;
 var h = window.innerHeight;
 var barrier = new barrier();
 var score;
+var meteorImg;
 
 function barrier() {
   this.x = w;
@@ -12,7 +13,6 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    fill(color('white'));
     Image(meteorImg,this.x,this.y,this.w,this.randH);
     }
     
