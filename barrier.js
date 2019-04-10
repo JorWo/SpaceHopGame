@@ -13,7 +13,7 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    Image(meteorImg,this.x,this.y,this.w,this.randH);
+    image(meteorImg,this.x,this.y,this.w,this.randH);
     }
     
   this.update = function() {
