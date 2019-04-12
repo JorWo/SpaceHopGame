@@ -7,6 +7,7 @@ var meteorSpr;
 
 function setup() {
   meteorSpr.addAnimation("default", meteorImg); 
+  meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
 }
 
 function barrier() {
@@ -18,7 +19,7 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
+    
     }
     
   this.update = function() {
