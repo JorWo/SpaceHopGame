@@ -29,7 +29,7 @@ function barrier() {
     this.velocity *= 0.984; //air resistance
     
     if (this.x < -75) { //barrier hits the left side
-      //meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
+      meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
       this.x = w;
       this.y = Math.floor(Math.random()*h);
       this.randH = Math.floor(Math.random()*280) + 50;
