@@ -44,6 +44,8 @@
     function setup() {
       bg = loadImage('SpaceBackground.jpg');
       jumperImg = loadImage('spaceship.png');
+      meteorSpr.addAnimation("default", meteorImg); 
+      meteorSpr = createSprite(barrier.x, barrier.y, barrier.randH, barrier.randH);
       createCanvas(w,h);
       
     }
@@ -62,6 +64,7 @@
       if (hitBarrier == true) {
         noLoop();
         var score = 0;
+        
       }
     }
     </script>
