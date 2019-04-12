@@ -57,6 +57,7 @@
       jumper.move();
       barrier.show();
       barrier.update();
+      drawSprites();
       
       hitBarrier = collideRectRect(barrier.x,barrier.y,barrier.randH*0.5,barrier.randH*0.7,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
       
