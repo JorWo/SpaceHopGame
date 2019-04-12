@@ -7,7 +7,7 @@ var meteorSpr;
 var rand;
 
 function setup() {
-  var rand = random(0.5,3);
+  rand = random(0.5,3);
   meteorSpr.addAnimation("default", meteorImg); 
   meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
 }
