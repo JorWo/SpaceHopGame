@@ -14,8 +14,8 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    meteorSpr.position.x = this.x;
-    meteorSpr.position.y = this.y;
+    meteorSpr = createSprite(this.x, this.y,
+    random(100, 500), random(100, 500));
     }
     
   this.update = function() {
