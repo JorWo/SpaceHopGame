@@ -3,6 +3,7 @@ var h = window.innerHeight;
 var barrier = new barrier();
 var score;
 var meteorImg;
+var meteorSpr;
 
 function barrier() {
   this.x = w;
@@ -13,7 +14,7 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    animation(meteorImg,this.x,this.y,this.randH,this.randH);
+    animation(meteorImg,this.x,this.y);
     }
     
   this.update = function() {
