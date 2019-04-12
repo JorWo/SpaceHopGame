@@ -15,13 +15,14 @@ function barrier() {
   this.y = Math.floor(Math.random()*h);
   this.w = 50;
   this.randH = Math.floor(Math.random()*280) + 50;
+  this.randS randH/meteorSpr.height;
   this.gravity = 0.5; //The force of gravity
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
       meteorSpr.position.x = this.x;
       meteorSpr.position.y = this.y;
-      meteorSpr.scale = 3;
+      meteorSpr.scale = randS;
     }
     
   this.update = function() {
@@ -30,10 +31,10 @@ function barrier() {
     this.velocity *= 0.984; //air resistance
     
     if (this.x < -75) { //barrier hits the left side
-      meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
       this.x = w;
       this.y = Math.floor(Math.random()*h);
       this.randH = Math.floor(Math.random()*280) + 50;
+      this.randS = randH/meteorSpr.height;
       score++;
       
       document.getElementById('scoreBox').innerHTML = "Score: " + score;
