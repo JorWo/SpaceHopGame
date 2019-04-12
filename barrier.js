@@ -15,7 +15,7 @@ function barrier() {
   this.x = w;
   this.y = Math.floor(Math.random()*h);
   this.w = 50;
-  this.h = 100*rand;
+  this.h = 200*rand;
   this.gravity = 0.5; //The force of gravity
   this.velocity = 0; //Velocity of barrier
   
@@ -34,7 +34,7 @@ function barrier() {
       this.x = w;
       this.y = Math.floor(Math.random()*h);
       rand = random(0.3,2.5);
-      this.h = 100*rand;
+      this.h = 200*rand;
       score++;
       
       document.getElementById('scoreBox').innerHTML = "Score: " + score;
