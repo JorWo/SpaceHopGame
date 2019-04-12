@@ -19,7 +19,8 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    
+      meteorSpr.position.x = this.x;
+      meteorSpr.position.y = this.y;
     }
     
   this.update = function() {
