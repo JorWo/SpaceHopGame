@@ -21,6 +21,7 @@ function barrier() {
   this.show = function() {
       meteorSpr.position.x = this.x;
       meteorSpr.position.y = this.y;
+      meteorSpr.scale = 3;
     }
     
   this.update = function() {
