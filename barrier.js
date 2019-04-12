@@ -34,7 +34,7 @@ function barrier() {
     if (this.x < -75) { //barrier hits the left side
       this.x = w;
       this.y = Math.floor(Math.random()*h);
-      var rand = random(0.5,3);
+      rand = random(0.5,3);
       this.randH = Math.floor(Math.random()*280) + 50;
       score++;
       
