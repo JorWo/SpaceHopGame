@@ -14,6 +14,7 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
+    meteorSpr.addAnimation("default", meteorImg);
     meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
     }
     
