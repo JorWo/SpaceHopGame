@@ -7,7 +7,7 @@ var meteorSpr;
 var rand;
 
 function setup() {
-  rand = random(1,3);
+  var rand = random(0.5,3);
   meteorSpr.addAnimation("default", meteorImg); 
   meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
 }
@@ -34,7 +34,7 @@ function barrier() {
     if (this.x < -75) { //barrier hits the left side
       this.x = w;
       this.y = Math.floor(Math.random()*h);
-      rand = random(1,3);
+      var rand = random(0.5,3);
       this.randH = Math.floor(Math.random()*280) + 50;
       score++;
       
