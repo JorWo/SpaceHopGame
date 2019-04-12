@@ -37,9 +37,9 @@
     var meteorImg;
     var meteorSpr;
     
-    //function preload() {
-      //meteorImg = loadAnimation('meteors/meteor0001.png','meteors/meteor0002.png','meteors/meteor0003.png','meteors/meteor0004.png','meteors/meteor0005.png','meteors/meteor0006.png','meteors/meteor0007.png', 'meteors/meteor0008.png','meteors/meteor0009.png','meteors/meteor0010.png','meteors/meteor0011.png'); 
-   //}
+    function preload() {
+      meteorImg = loadAnimation('meteors/meteor0001.png','meteors/meteor0002.png','meteors/meteor0003.png','meteors/meteor0004.png','meteors/meteor0005.png','meteors/meteor0006.png','meteors/meteor0007.png', 'meteors/meteor0008.png','meteors/meteor0009.png','meteors/meteor0010.png','meteors/meteor0011.png'); 
+   }
       
     function setup() {
       bg = loadImage('SpaceBackground.jpg');
@@ -56,7 +56,7 @@
       jumper.move();
       barrier.show();
       barrier.update();
-      drawSprites();
+      //drawSprites();
       
       hitBarrier = collideRectRect(barrier.x,barrier.y,barrier.randH*0.5,barrier.randH*0.7,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
       
