@@ -5,6 +5,10 @@ var score;
 var meteorImg;
 var meteorSpr;
 
+function setup() {
+  meteorSpr.addAnimation("default", meteorImg); 
+}
+
 function barrier() {
   this.x = w;
   this.y = Math.floor(Math.random()*h);
@@ -14,7 +18,6 @@ function barrier() {
   this.velocity = 0; //Velocity of barrier
   
   this.show = function() {
-    meteorSpr.addAnimation("default", meteorImg);
     meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
     }
     
