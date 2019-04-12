@@ -21,7 +21,7 @@ function barrier() {
   this.show = function() {
       meteorSpr.position.x = this.x;
       meteorSpr.position.y = this.y;
-      meteor.height = randH;
+      meteorSpr.height = randH;
     }
     
   this.update = function() {
