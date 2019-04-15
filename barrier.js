@@ -31,7 +31,7 @@ function barrier() {
     this.velocity *= 0.984; //air resistance
     
     if (this.x < -75) { //barrier hits the left side
-      this.x = w;
+      this.x = w+75;
       this.y = Math.floor(Math.random()*h);
       rand = random(0.3,2.5);
       this.h = 200*rand;
