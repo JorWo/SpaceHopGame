@@ -35,7 +35,7 @@ function barrier() {
       this.y = Math.floor(Math.random()*h);
       rand = random(0.3,2.5);
       this.h = 200*rand;
-      scorePts++;
+      scorePts += 1;
       document.getElementById('scoreBox').innerHTML = "Score: " + scorePts;
     }
     
