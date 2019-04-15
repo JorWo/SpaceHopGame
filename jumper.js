@@ -28,7 +28,7 @@ var jumperImg;
             this.velocity = 0;
           }
           if (this.y < 0) {
-            this.y = 27.5;
+            this.y = 0;
             this.velocity = 0;
           }
         }
