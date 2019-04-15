@@ -37,7 +37,7 @@ var jumperImg;
           if (keyIsDown(68) && this.x < w) {
           this.x += 5;
           }
-          if (keyIsDown(65) && this.x > 0) {
+          if (keyIsDown(65) && this.x > -20) {
           this.x -= 5;
           }
           if (keyIsDown(83)) {
