@@ -42,9 +42,9 @@ function barrier() {
     hitBarrier = collideRectRect(barrier.x-(150*rand),barrier.y,barrier.h*0.9,barrier.h*0.3,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
       
      if (hitBarrier == true) {
+       noLoop();
        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
        button.style.visibility = "visible";
-       noLoop();
        var score = 0;
      }
   };
