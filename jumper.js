@@ -34,7 +34,7 @@ var jumperImg;
         }
         
         this.move = function() {
-          if (keyIsDown(68) && this.x < w-60) {
+          if (keyIsDown(68) && this.x < w-55) {
           this.x += 5;
           }
           if (keyIsDown(65) && this.x > 0) {
