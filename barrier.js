@@ -40,5 +40,13 @@ function barrier() {
       document.getElementById('scoreBox').innerHTML = "Score: " + score;
       
     }
+    
+    hitBarrier = collideRectRect(barrier.x-(150*rand),barrier.y,barrier.h*0.9,barrier.h*0.3,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
+      
+     if (hitBarrier == true) {
+       document.getElementById('finalScore').innerHTML = "You scored " + score + " points!";
+       noLoop();
+       var score = 0;
+     }
   };
 }
