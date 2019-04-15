@@ -43,6 +43,7 @@ function barrier() {
       
      if (hitBarrier == true) {
        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
+       button.style.visibility = "visible";
        noLoop();
        var score = 0;
      }
