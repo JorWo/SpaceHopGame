@@ -1,7 +1,7 @@
 var w = window.innerWidth;
 var h = window.innerHeight;
 var barrier = new barrier();
-var score;
+var score = 0;
 var meteorImg;
 var meteorSpr;
 var rand;
