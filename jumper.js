@@ -23,8 +23,8 @@ var jumperImg;
           this.velocity += this.gravity; //Gravity applied when not jumping
           this.y += this.velocity;
           this.velocity *= 0.98; //air resistance
-          if (this.y > h-50) { //jumper hits the floor
-            this.y = h-50;
+          if (this.y > h-55) { //jumper hits the floor
+            this.y = h-55;
             this.velocity = 0;
           }
           if (this.y < 0) {
