@@ -7,16 +7,17 @@
     <script src='barrier.js'></script>
     <script src='platform.js'></script>
     <style>
+      @font-face {
+        font-family: Nasalization;
+        src: url(nasalization-rg.tff);
+      }
+      
       body {
         margin:0;
         padding:0;
         overflow:hidden;
         background-size:cover;
-      }
-      
-      @font-face {
-        font-family: Sansation;
-        src: url(sansation_light.woff);
+        font-family:Nasalization;
       }
       
       #scoreBox {
@@ -43,7 +44,6 @@
       }
       
       #finalScore {
-        font-family: Sansation;
         position:fixed;
         color:yellow;
         font-size:32px;
