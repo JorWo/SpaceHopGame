@@ -43,7 +43,14 @@ function barrier() {
       
      if (hitBarrier == true) {
        noLoop();
-       document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
+       
+       if (scorePts == 1) {
+        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " point!";
+       }
+       else if (scorePts > 1) {
+        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
+       }
+       
        document.getElementById('restartButton').style.visibility = "visible";
        var score = 0;
      }
