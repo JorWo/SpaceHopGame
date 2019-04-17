@@ -44,7 +44,7 @@ function barrier() {
      if (hitBarrier == true) {
        noLoop();
        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
-       button.style.visibility = "visible";
+       document.getElementById('restartButton').style.visibility = "visible";
        var score = 0;
      }
   };
