@@ -50,4 +50,7 @@ var jumperImg;
         if (keyCode === 32) {
           jumper.up();
         }
+        if (keyCode === 82) {
+          location.reload();
+        }
       }
