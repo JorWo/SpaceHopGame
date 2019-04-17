@@ -22,7 +22,7 @@
         margin-top:-5px;
       }
       
-      button {
+      #restartButton {
         visibility: hidden;
         position:fixed;
         width:250px;
@@ -38,7 +38,7 @@
   <body>
     <p id='scoreBox'>Score: 0</p>
     <p id='finalScore'></p>
-    <button onClick = location.reload()>Play Again[R]</a>
+    <button id='restartButton' onClick = location.reload()>Play Again[R]</a>
     <script>
     var w = window.innerWidth;
     var h = window.innerHeight;
