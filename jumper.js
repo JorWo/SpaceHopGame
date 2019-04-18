@@ -24,7 +24,6 @@ var jumperImg;
           this.y += this.velocity;
           this.velocity *= 0.98; //air resistance
           if (this.y > h) { //jumper falls through bottom
-            this.y = h;
             noLoop();
        
             if (scorePts == 1) {
