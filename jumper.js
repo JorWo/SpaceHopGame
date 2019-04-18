@@ -8,7 +8,7 @@ var jumperImg;
         this.y = 0;
         this.r = 75;
         this.gravity = 0.5; //The force of gravity
-        this.lift = -12; //Opposing the force of gravity
+        this.lift = -14; //Opposing the force of gravity
         this.velocity = 0; //Velocity of player
         
         this.show = function() {
