@@ -31,7 +31,7 @@ var jumperImg;
             this.y = 0;
             this.velocity = 0;
           }
-          if (this.y => h) {
+          if (this.y => h-50) {
             noLoop();
        
             if (scorePts == 1) {
