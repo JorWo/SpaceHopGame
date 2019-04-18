@@ -23,15 +23,8 @@ var jumperImg;
           this.velocity += this.gravity; //Gravity applied when not jumping
           this.y += this.velocity;
           this.velocity *= 0.98; //air resistance
-          if (this.y > h-55) { //jumper hits the floor
-            this.y = h-55;
-            this.velocity = 0;
-          }
-          if (this.y < 0) {
-            this.y = 0;
-            this.velocity = 0;
-          }
-          if (this.y => h-200) {
+          if (this.y > h) { //jumper falls through bottom
+            this.y = h;
             noLoop();
        
             if (scorePts == 1) {
@@ -43,6 +36,10 @@ var jumperImg;
        
             document.getElementById('restartButton').style.visibility = "visible";
             var score = 0;
+          }
+          if (this.y < 0) { //jumper hits the top
+            this.y = 0;
+            this.velocity = 0;
           }
         }
         
