@@ -31,6 +31,19 @@ var jumperImg;
             this.y = 0;
             this.velocity = 0;
           }
+          if (this.y => h) {
+            noLoop();
+       
+            if (scorePts == 1) {
+              document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " point!";
+            }
+            else if (scorePts > 1) {
+              document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
+            }
+       
+            document.getElementById('restartButton').style.visibility = "visible";
+            var score = 0;
+          }
         }
         
         this.move = function() {
