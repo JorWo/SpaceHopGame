@@ -18,10 +18,10 @@
   </head>
   <body>
   <h1>Space Hop</h1>
-    <button id='startGame'>Start Game!</button>
+    <button id='startGame' onclick="beginGame()">Start Game!</button>
     <script>
-      document.getElementById('startGame').onclick = function() {
+      function beginGame() {
         location.href = "startGame.html";
-    };
+      }
     </script>
   </body>
