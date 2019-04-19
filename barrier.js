@@ -36,7 +36,7 @@ function barrier() {
       exploadSound.play();
       noLoop();
        
-      if (scorePts == 1) {
+      if (scorePts == 1 || scorePts == 0) {
         document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " point!";
       }
       else if (scorePts > 1) {
