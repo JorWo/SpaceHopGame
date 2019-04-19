@@ -9,7 +9,7 @@ var rand;
 function setup() {
   meteorSpr.addAnimation("default", meteorImg); 
   meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
-  meteorWhoosh.play();
+  
 }
 
 function barrier() {
@@ -37,6 +37,7 @@ function barrier() {
       this.y = Math.floor(Math.random()*h);
       rand = random(0.3,2.5);
       this.h = 200*rand;
+      meteorWhoosh.play();
       scorePts += 1;
       document.getElementById('scoreBox').innerHTML = "Score: " + scorePts;
     }
