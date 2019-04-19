@@ -40,20 +40,24 @@
   <p>You are the spaceship</p>
   <p>Jump: [Spacebar]</p>
   <p>Move Left & Right: [A] & [D] Key</p>
-    <p> Hold [S] to fall faster</p>
+  <p> Hold [S] to fall faster</p>
   <p>Restart: [R]</p>
   <h1>Objective</h1>
   <p>Dodge the meteors</p>
   <p>Don't fall through the bottom, there is a blackhole!</p>
-    <button id='startGame' onclick="beginGame()">Start Game!</button>
+  <button id='startGame' onclick="beginGame()">Start Game!</button>
+    
     <script>
     var meteorImg;
     var jumperImg;
       function beginGame() {
         location.href = "spaceHop.html";
       }
+      
       function setup() {
         meteorImg = loadAnimation('meteors/meteor0001.png','meteors/meteor0002.png','meteors/meteor0003.png','meteors/meteor0004.png','meteors/meteor0005.png','meteors/meteor0006.png','meteors/meteor0007.png', 'meteors/meteor0008.png','meteors/meteor0009.png','meteors/meteor0010.png','meteors/meteor0011.png');
+        meteorSpr.addAnimation("default", meteorImg); 
+        meteorSpr = createSprite(0, 0);
         jumperImg = loadImage('spaceship.png');
         createCanvas(width,height);
       }
