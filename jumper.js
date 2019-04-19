@@ -58,7 +58,7 @@ var jumperImg;
       function keyPressed() {
         if (keyCode === 32) {
           jumper.up();
-          jumpSound.play()
+          jumpSound.play();
         }
         if (keyCode === 82) {
           location.reload();
