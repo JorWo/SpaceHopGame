@@ -23,6 +23,7 @@ function barrier() {
       meteorSpr.position.x = this.x;
       meteorSpr.position.y = this.y;
       meteorSpr.scale = rand;
+      meteorWhoosh.play();
     }
     
   this.update = function() {
