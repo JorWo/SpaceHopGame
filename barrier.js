@@ -9,6 +9,7 @@ var rand;
 function setup() {
   meteorSpr.addAnimation("default", meteorImg); 
   meteorSpr = createSprite(this.x, this.y, this.randH, this.randH);
+  meteorWhoosh.play();
 }
 
 function barrier() {
@@ -18,12 +19,12 @@ function barrier() {
   this.h = 500;
   this.gravity = 0.5; //The force of gravity
   this.velocity = 0; //Velocity of barrier
-  
+ 
   this.show = function() {
       meteorSpr.position.x = this.x;
       meteorSpr.position.y = this.y;
       meteorSpr.scale = rand;
-      meteorWhoosh.play();
+     
     }
     
   this.update = function() {
