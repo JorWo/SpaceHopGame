@@ -4,16 +4,31 @@
     <script src="p5.play.js"></script>
   
     <style>
-    @font-face {
+      @font-face {
         font-family:'Nasalization';
         src: url('nasalization-rg-webfont.woff2') format('woff2'),
               url('nasalization-rg-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
       }
-     body {
-      font-family: Nasalization;
-     }
+      
+      body {
+       font-family: Nasalization;
+      }
+      
+      #startGame {
+        background-color: #58CCED;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 32px;
+        margin: 4px 2px;
+        cursor:pointer;
+        font-family:Nasalization;
+      }
     </style>
   </head>
   <body>
@@ -23,7 +38,7 @@
   <p>Jump: [Spacebar]</p>
   <p>Move Left & Right: [A] & [D] Key</p>
     <p> Hold [S] to fall faster</p>
-  <p>Jump: Spacebar</p>
+  <p>Restart: [R]</p>
   <h1>Objective</h1>
   <p>Dodge the meteors</p>
   <p>Don't fall through the bottom, there is a blackhole!</p>
