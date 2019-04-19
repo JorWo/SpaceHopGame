@@ -24,6 +24,7 @@ var jumperImg;
           this.y += this.velocity;
           this.velocity *= 0.98; //air resistance
           if (this.y > h+25) { //jumper falls through bottom
+            blackholeSound.play();
             noLoop();
        
             if (scorePts == 1) {
