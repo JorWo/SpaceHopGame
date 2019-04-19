@@ -32,6 +32,8 @@ function barrier() {
     this.x -= this.velocity;
     this.velocity *= 0.984; //air resistance
     
+    hitBarrier = collideRectRect(this.x-(125*rand),this.y,this.h*0.9,this.h*0.3,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
+    
     if (this.x < -75) { //barrier hits the left side
       this.x = w+75;
       this.y = Math.floor(Math.random()*h);
@@ -42,21 +44,19 @@ function barrier() {
       document.getElementById('scoreBox').innerHTML = "Score: " + scorePts;
     }
     
-    hitBarrier = collideRectRect(this.x-(125*rand),this.y,this.h*0.9,this.h*0.3,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
-      
-     if (hitBarrier == true) {
-       exploadSound.play();
-       noLoop();
+    if (hitBarrier == true) {
+      exploadSound.play();
+      noLoop();
        
-       if (scorePts == 1) {
-        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " point!";
-       }
-       else if (scorePts > 1) {
-        document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
-       }
+    if (scorePts == 1) {
+      document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " point!";
+    }
+    else if (scorePts > 1) {
+      document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
+    }
        
-       document.getElementById('restartButton').style.visibility = "visible";
-       var score = 0;
+    document.getElementById('restartButton').style.visibility = "visible";
+    var score = 0;
      }
   };
 }
