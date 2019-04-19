@@ -18,7 +18,8 @@ function barrier() {
   this.h = 500;
   this.gravity = 0.5; //The force of gravity
   this.velocity = 0; //Velocity of barrier
- 
+  rand = 1;
+  
   this.show = function() {
       meteorSpr.position.x = this.x;
       meteorSpr.position.y = this.y;
