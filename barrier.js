@@ -15,7 +15,7 @@ function barrier() {
   this.x = w;
   this.y = Math.floor(Math.random()*h);
   this.w = 50;
-  this.h = 500;
+  this.h = 250;
   this.gravity = 0.5; //The force of gravity
   this.velocity = 0; //Velocity of barrier
   rand = 1;
