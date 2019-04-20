@@ -30,7 +30,7 @@ function barrier() {
     hitBarrier = collideRectRect(this.x-(125*rand),this.y,this.h*0.9,this.h*0.3,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
     this.velocity += this.gravity; //Gravity applied when not jumping
     this.x -= this.velocity;
-    this.velocity *= 0.984; //air resistance
+    this.velocity *= 0.985; //air resistance
     
     if (hitBarrier == true) {
       exploadSound.play();
