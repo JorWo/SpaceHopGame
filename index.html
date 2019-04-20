@@ -48,6 +48,8 @@
   <button id='startGame' onclick="beginGame()">Start Game!</button>
     
     <script>
+    var w = window.innerWidth;
+    var h = window.innerHeight;
     var meteorImg;
     var jumperImg;
       
@@ -58,12 +60,12 @@
       function setup() {
         meteorImg = loadAnimation('meteors/meteor0001.png','meteors/meteor0002.png','meteors/meteor0003.png','meteors/meteor0004.png','meteors/meteor0005.png','meteors/meteor0006.png','meteors/meteor0007.png', 'meteors/meteor0008.png','meteors/meteor0009.png','meteors/meteor0010.png','meteors/meteor0011.png');
         jumperImg = loadImage('spaceship.png');
-        createCanvas(width,height);
+        createCanvas(w,h);
       }
       
       function draw() {
-        image(jumperImg, width*0.4, 50, 75, 75);
-        animation(meteorImg, 100, 100);
+        image(jumperImg, 0, 50, 75, 75);
+        animation(meteorImg, w, 50);
         drawSprites();
       }
     </script>
