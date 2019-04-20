@@ -27,7 +27,7 @@ function barrier() {
     }
     
   this.update = function() {
-    hitBarrier = collideRectRect(this.x-(140*rand),this.y,this.h*0.9,this.h*0.4,jumper.x,jumper.y,jumper.r-30,jumper.r-40);
+    hitBarrier = collideRectRect(this.x-(140*rand),this.y,this.h*0.9,this.h*0.4,jumper.x,jumper.y,jumper.r-30,jumper.r);
     this.velocity += this.gravity; //Gravity applied when not jumping
     this.x -= this.velocity;
     this.velocity *= 0.985; //air resistance
