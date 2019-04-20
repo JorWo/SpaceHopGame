@@ -36,10 +36,10 @@ function barrier() {
       exploadSound.play();
       noLoop();
        
-      if (scorePts == 1 || scorePts == 0) {
+      if (scorePts == 1) {
         document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " point!";
       }
-      else if (scorePts > 1) {
+      else if (scorePts > 1  || scorePts == 0) {
         document.getElementById('finalScore').innerHTML = "You scored " + scorePts + " points!";
       }
        
