@@ -65,8 +65,8 @@ var jumperImg;
           location.reload();
         }
         
-        //function touchStarted() {
-          //jumper.up();
-          //jumpSound.play();
-        //}
+        function touchStarted() {
+          jumper.up();
+          jumpSound.play();
+        }
       }
