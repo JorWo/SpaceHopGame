@@ -48,9 +48,9 @@ function barrier() {
     }
     
     if (this.x < -75) { //barrier hits the left side
-      this.x = w+75;
-      this.y = Math.floor(Math.random()*h);
       rand = random(0.3,2.5);
+      this.x = w+(75*rand);
+      this.y = Math.floor(Math.random()*h);
       this.h = 200*rand;
       meteorWhoosh.play();
       scorePts += 1;
