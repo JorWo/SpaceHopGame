@@ -64,9 +64,9 @@ var jumperImg;
         if (keyCode === 82) {
           location.reload();
         }
-        
+      }
+
         function touchStarted() {
           jumper.up();
           jumpSound.play();
         }
-      }
