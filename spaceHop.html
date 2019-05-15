@@ -99,8 +99,19 @@
       jumpSound.setVolume(0.1);
       exploadSound.setVolume(0.2);
       blackholeSound.setVolume(0.4);
-      createCanvas(w,h);
       
+      var hammer = new Hammer(document.body, options);
+        hammer.get('swipe').set({
+          direction: Hammer.DIRECTION_ALL
+      });
+
+      hammer.on("swipe", swiped);
+      
+      var options = {
+        preventDefault: true
+      };
+      
+      createCanvas(w,h);
     }
       
     function draw() {
