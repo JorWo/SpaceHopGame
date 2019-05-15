@@ -66,7 +66,14 @@ var jumperImg;
         }
       }
 
-        function touchStarted() {
-          jumper.up();
-          jumpSound.play();
-        }
+      function touchStarted() {
+         jumper.up();
+         jumpSound.play();
+      }
+
+      function swiped(event) {
+         console.log(event);
+         if (event.direction == 16) {
+           jumper.y += 5;
+         } 
+      }
