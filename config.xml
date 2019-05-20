@@ -1,4 +1,4 @@
-<!--<?xml version="1.0" encoding="UTF-8"?-->
+		<?xml version="1.0" encoding="UTF-8"?>
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
@@ -6,9 +6,9 @@
 		versionCode=""
 		version   = "1.0.0">
 		<name>Space Hop		</name>
-		<description>Dodge the incoming meteors!		</description>
+		<description>Drive a spaceship and dodge meteors!		</description>
 		<author href="jorwo.github.io" email="jorwon21@roosevelths.k12.hi.us">Jordan Wong		</author>
-		<preference name="phonegap-version" value="cli-6.5.0" />
+		<preference name="phonegap-version" value="cli-6.3.0" />
 		<preference name="android-build-tool" value="gradle" />
 		<preference name="orientation" value="default" />
 		<preference name="fullscreen" value="true" />
@@ -33,7 +33,6 @@
 		<preference name="SuppressesIncrementalRendering" value="false" />
 		<preference name="windows-identity-name" value="" />
 		<preference name="android-minSdkVersion" value="23" />
-		<preference name="android-maxSdkVersion" value="0" />
 		<preference name="android-installLocation" value="auto" />
 		<preference name="SplashScreenDelay" value="2000" />
 		<preference name="ErrorUrl" value="null" />
@@ -44,6 +43,12 @@
 		<platform name="ios">
 		</platform>
 		<platform name="android">
+		<icon src="file://C:\Users\F103\Desktop\spacehop_icon36.png" qualifier="ldpi" />
+		<icon src="file://C:\Users\F103\Desktop\spacehop_icon48.png" qualifier="mdpi" />
+		<icon src="file://C:\Users\F103\Desktop\spacehop_icon72.png" qualifier="hdpi" />
+		<icon src="file://C:\Users\F103\Desktop\spacehop_icon96.png" qualifier="xhdpi" />
+		<icon src="file://C:\Users\F103\Desktop\spacehop_icon144.png" qualifier="xxhdpi" />
+		<icon src="file://C:\Users\F103\Desktop\spacehop_icon192.png" qualifier="xxxhdpi" />
 		</platform>
 		<platform name="winphone">
 		</platform>
