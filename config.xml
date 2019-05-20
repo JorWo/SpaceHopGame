@@ -1,4 +1,4 @@
-		<?xml version="1.0" encoding="UTF-8"?>
+		<!--<?xml version="1.0" encoding="UTF-8"?-->
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		xmlns:android = "http://schemas.android.com/apk/res/android"
@@ -8,7 +8,7 @@
 		<name>Space Hop		</name>
 		<description>Drive a spaceship and dodge meteors!		</description>
 		<author href="jorwo.github.io" email="jorwon21@roosevelths.k12.hi.us">Jordan Wong		</author>
-		<preference name="phonegap-version" value="cli-6.3.0" />
+		<preference name="phonegap-version" value="cli-6.5.0" />
 		<preference name="android-build-tool" value="gradle" />
 		<preference name="orientation" value="default" />
 		<preference name="fullscreen" value="true" />
