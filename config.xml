@@ -43,12 +43,12 @@
 		<platform name="ios">
 		</platform>
 		<platform name="android">
-		<icon src="file://C:\Users\F103\Desktop\spacehop_icon36.png" qualifier="ldpi" />
-		<icon src="file://C:\Users\F103\Desktop\spacehop_icon48.png" qualifier="mdpi" />
-		<icon src="file://C:\Users\F103\Desktop\spacehop_icon72.png" qualifier="hdpi" />
-		<icon src="file://C:\Users\F103\Desktop\spacehop_icon96.png" qualifier="xhdpi" />
-		<icon src="file://C:\Users\F103\Desktop\spacehop_icon144.png" qualifier="xxhdpi" />
-		<icon src="file://C:\Users\F103\Desktop\spacehop_icon192.png" qualifier="xxxhdpi" />
+		<icon src="Icons\spacehop_icon36.png" qualifier="ldpi" />
+		<icon src="Icons\spacehop_icon48.png" qualifier="mdpi" />
+		<icon src="Icons\spacehop_icon72.png" qualifier="hdpi" />
+		<icon src="Icons\spacehop_icon96.png" qualifier="xhdpi" />
+		<icon src="Icons\spacehop_icon144.png" qualifier="xxhdpi" />
+		<icon src="Icons\spacehop_icon192.png" qualifier="xxxhdpi" />
 		</platform>
 		<platform name="winphone">
 		</platform>
